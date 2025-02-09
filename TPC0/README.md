@@ -6,7 +6,7 @@
 ## 👤 Autor
 - **Nome:** Fernando Jorge Silva Pires
 - **Número de Aluno:** A77399
-- ![Fernando Pires](../fernandopires.jpg)
+![Fernando Pires](../fernandopires.jpg)
 
 ## 📖 Resumo
 Este trabalho consistiu em:
