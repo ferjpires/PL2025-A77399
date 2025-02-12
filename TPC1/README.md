@@ -15,7 +15,7 @@ Este trabalho consistiu em:
 - Exibir o resultado da soma sempre que o caracter "=" for encontrado.
 
 ## 📂 Resultados
-Os resultados do programa são escritos no ficheiro `output.txt`. Todos os ficheiros podem ser encontrados na página [https://github.com/ferjpires/PL2025-A77399/TPC1](https://github.com/ferjpires/PL2025-A77399/TPC1).
+Os resultados do programa são escritos no ficheiro `output.txt`. Todos os ficheiros podem ser encontrados na página [https://github.com/ferjpires/PL2025-A77399//tree/main/TPC1](https://github.com/ferjpires/PL2025-A77399//tree/main/TPC1).
 
 ---
 
