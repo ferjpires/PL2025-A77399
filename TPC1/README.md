@@ -30,7 +30,7 @@ Os resultados do programa são escritos no ficheiro `output.txt`. Todos os fiche
    ```
 2. **Escolha a opção de entrada**:
 
-- Escolha 1 para inserir uma string diretamente.
+   - Escolha 1 para inserir uma string diretamente.
 
 - Escolha 2 para ler de um ficheiro.
 
