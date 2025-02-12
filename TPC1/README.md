@@ -32,19 +32,19 @@ Os resultados do programa são escritos no ficheiro `output.txt`. Todos os fiche
 
    - Escolha 1 para inserir uma string diretamente.
 
-- Escolha 2 para ler de um ficheiro.
+   - Escolha 2 para ler de um ficheiro.
 
 3. **Funcionamento do programa**:
 
-- Se escolher a opção 1, insira a string diretamente.
+   - Se escolher a opção 1, insira a string diretamente.
 
-- Se escolher a opção 2, insira o nome do ficheiro (por exemplo, `text.txt`).
+   - Se escolher a opção 2, insira o nome do ficheiro (por exemplo, `text.txt`).
 
-- O programa processará o texto, somando os números quando o somador estiver ligado ("On") e exibindo a soma sempre que encontrar "=".
+   - O programa processará o texto, somando os números quando o somador estiver ligado ("On") e exibindo a soma sempre que encontrar "=".
 
 4. **Output**:
 
-O programa escreverá as somas parciais e a soma final no ficheiro `output.txt`.
+   - O programa escreverá as somas parciais e a soma final no ficheiro `output.txt`.
 
 ## 📝 Notas
 - O programa é **case-insensitive** para as palavras "On" e "Off", ou seja, reconhece-as independentemente de estarem em maiúsculas ou minúsculas.
