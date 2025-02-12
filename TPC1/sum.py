@@ -1,4 +1,4 @@
-def process_text(text):
+def process_text(text, output_file):
     total_sum = 0
     is_on = True
     
@@ -21,7 +21,7 @@ def process_text(text):
             buffer = ""
         
         if char == '=':
-            print(f"Current sum: {total_sum}")
+            output_file.write(f"Current sum: {total_sum}\n")
         
         if is_on and char.isdigit():
             number_str = ""
@@ -49,8 +49,10 @@ def main():
         print("Invalid option.")
         return
     
-    final_sum = process_text(text)
-    print(f"Final sum: {final_sum}")
+    # Abre o ficheiro output.txt para escrita
+    with open("output.txt", "w") as output_file:
+        final_sum = process_text(text, output_file)
+        output_file.write(f"Final sum: {final_sum}\n")
 
 if __name__ == "__main__":
     main()
