@@ -1,6 +1,7 @@
 import re
 
 def markdown_para_html(md_texto):
+    """Converte um texto em Markdown para HTML."""
     linhas = md_texto.split('\n')
     html_saida = []
     dentro_lista = False
@@ -11,23 +12,22 @@ def markdown_para_html(md_texto):
         # Cabeçalhos
         if re.match(r'^### (.+)', linha):
             html_saida.append(f"<h3>{linha[4:]}</h3>")
+            continue
         elif re.match(r'^## (.+)', linha):
             html_saida.append(f"<h2>{linha[3:]}</h2>")
+            continue
         elif re.match(r'^# (.+)', linha):
             html_saida.append(f"<h1>{linha[2:]}</h1>")
+            continue
 
         # Bold
-        elif re.search(r'\*\*(.*?)\*\*', linha):
-            linha = re.sub(r'\*\*(.*?)\*\*', r'<b>\1</b>', linha)
-            html_saida.append(linha)
-
+        linha = re.sub(r'\*\*(.*?)\*\*', r'<b>\1</b>', linha)
+        
         # Itálico
-        elif re.search(r'\*(.*?)\*', linha):
-            linha = re.sub(r'\*(.*?)\*', r'<i>\1</i>', linha)
-            html_saida.append(linha)
-
+        linha = re.sub(r'\*(.*?)\*', r'<i>\1</i>', linha)
+        
         # Listas numeradas
-        elif re.match(r'^\d+\.\s+(.+)', linha):
+        if re.match(r'^\d+\.\s+(.+)', linha):
             if not dentro_lista:
                 html_saida.append("<ol>")
                 dentro_lista = True
@@ -38,11 +38,11 @@ def markdown_para_html(md_texto):
                 html_saida.append("</ol>")
                 dentro_lista = False
             
+            # Imagens (deve ser tratado antes de links para evitar conflitos)
+            linha = re.sub(r'!\[(.*?)\]\((.*?)\)', r'<img src="\2" alt="\1"/>', linha)
+            
             # Links
             linha = re.sub(r'\[(.*?)\]\((.*?)\)', r'<a href="\2">\1</a>', linha)
-            
-            # Imagens
-            linha = re.sub(r'!\[(.*?)\]\((.*?)\)', r'<img src="\2" alt="\1"/>', linha)
             
             html_saida.append(linha)
     
@@ -52,11 +52,11 @@ def markdown_para_html(md_texto):
     return '\n'.join(html_saida)
 
 # Teste
-teste_md = """# Exemplo
+teste_md = """# Título Principal
 ## Subtítulo
-### Terceiro nível
+### Cabeçalho Menor
 
-Este é um **exemplo** de *Markdown*.
+Este é um **texto em negrito** e este é um *texto em itálico*.
 
 1. Primeiro item
 2. Segundo item
