@@ -1,1 +1,7 @@
-[{"cod": "A23", "nome": "\u00c3\u00a1gua 0.5L", "quant": 4, "preco": 0.7}, {"cod": "B45", "nome": "refrigerante 0.5L", "quant": 10, "preco": 1.2}, {"cod": "C67", "nome": "bolacha", "quant": 5, "preco": 0.5}, {"cod": "D89", "nome": "chocolate", "quant": 12, "preco": 1.0}, {"cod": "E01", "nome": "p\u00c3\u00a3o", "quant": 3, "preco": 0.8}]
+[
+  { "cod": "A23", "nome": "\u00c3\u00a1gua 0.5L", "quant": 4, "preco": 0.7 },
+  { "cod": "B45", "nome": "refrigerante 0.5L", "quant": 10, "preco": 1.2 },
+  { "cod": "C67", "nome": "bolacha", "quant": 5, "preco": 0.5 },
+  { "cod": "D89", "nome": "chocolate", "quant": 12, "preco": 1.0 },
+  { "cod": "E01", "nome": "p\u00c3\u00a3o", "quant": 3, "preco": 0.8 }
+]
