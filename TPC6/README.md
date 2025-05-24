@@ -1,4 +1,4 @@
-# 📌 TPC5 - Máquina de Vending
+# 📌 TPC6 - Parser
 
 ## 📅 Data
 2025-04-07
